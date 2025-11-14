@@ -1,6 +1,6 @@
 package T01;
 
-public class Atv_9 {
+public class Calculadora {
     public static void main(String[] args) {
 
         double num1 = Double.parseDouble(args[0]);
