@@ -16,7 +16,7 @@ public class Ponto3D {
     // ...
 
     // (a) Calcula a distância deste ponto até o ponto 'p'
-    public double calculaDistancia(Ponto3D p) {
+    protected double calculaDistancia(Ponto3D p) {
         // 'this.x' é o 'x' do ponto atual
         // 'p.getX()' é o 'x' do ponto 'p'
         double diffX = this.x - p.getX();

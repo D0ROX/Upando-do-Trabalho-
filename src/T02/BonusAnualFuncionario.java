@@ -35,6 +35,6 @@ public class BonusAnualFuncionario {
         } else if(cargo.equalsIgnoreCase("auxiliar de limpeza")){
             bonus = salario*0.5;
         }
-        System.out.printf("De acordo com com seu cargo e com as regrasda empresa, seu bonus é: R$ %.2f", bonus);
+        System.out.printf("De acordo com com seu cargo e com as regras da empresa, seu bonus é: R$ %.2f", bonus);
     }
 }
