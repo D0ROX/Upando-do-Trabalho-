@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public static class GerenciadorDeTarefas {
+public class GerenciadorDeTarefas {
 
     private List<String> tarefas;
 
@@ -17,7 +17,7 @@ public static class GerenciadorDeTarefas {
         System.out.println("✅ Tarefa adicionada com sucesso!");
     }
 
-    public void listarTarefa() {
+    public void listarTarefas() {
         System.out.println(" --- Tarefas --- ");
         if (this.tarefas.isEmpty()) {
             System.out.println("Nenhum tarefa encontrada");
@@ -40,11 +40,27 @@ public static class GerenciadorDeTarefas {
         }
     }
 
-}
-
     public static void main(String[] args){
 
-    GerenciadorDeTarefas meuGerenciador = new GerenciadorDeTarefas();
+        GerenciadorDeTarefas meuGerenciador = new GerenciadorDeTarefas();
+
+        meuGerenciador.listarTarefas();
+
+        meuGerenciador.adicionarTarefa("Estudar Construtor ");
+        meuGerenciador.adicionarTarefa("Aprender a usar MAC ");
+
+        meuGerenciador.listarTarefas();
+
+        meuGerenciador.removerTarefa("Aprender a usar MAC ");
+
+        meuGerenciador.listarTarefas();
+
+        meuGerenciador.removerTarefa("Correr na rua ");
+    }
+
+
 }
+
+
 
 
